@@ -38,3 +38,28 @@ print(acc2.deposit(300))
 print(acc1.display())  # Reflects updated class variable
 print(acc2.display())
 
+
+
+class Vehicle:
+    wheels = 4  # Class variable
+
+    def __init__(self, make, model):
+        self.make = make      # Instance variable
+        self.model = model    # Instance variable
+
+    def info(self):
+        return f"{self.make} {self.model} has {Vehicle.wheels} wheels."
+
+v1 = Vehicle("Honda", "Civic")
+v2 = Vehicle("Toyota", "Camry")
+
+print(v1.info())  # Honda Civic has 4 wheels.
+print(v2.info())  # Toyota Camry has 4 wheels.
+
+# Changing class variable via class name
+Vehicle.wheels = 6
+
+print(v1.info())  # Honda Civic has 6 wheels.
+print(v2.info())  # Toyota Camry has 6 wheels.
+
+
