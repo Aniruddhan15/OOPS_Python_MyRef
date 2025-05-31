@@ -1,0 +1,11 @@
+✅ Week 3: Inheritance, Polymorphism, Magic Methods
+
+🧠 Concepts:
+
+Inheritance: Single, Multilevel, Multiple
+
+super() keyword
+
+Method Overriding (Polymorphism)
+
+Operator Overloading with Magic Methods (__add__, __eq__, etc.)
