@@ -24,3 +24,30 @@ class Child(Parent):
         print("🔓 Access using mangled name:", self._Parent__private_var)
 
 child = Child()
+
+#Example 2:
+
+class Animal:
+    def __init__(self):
+        print("Animal is alive")
+
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Dog is born")
+
+d = Dog()
+
+
+#Example:
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class Student(Person):
+    def __init__(self, name, roll_no):
+        super().__init__(name)
+        self.roll_no = roll_no
+
+s = Student("Aniruddhan", 1682)
+print(s.name, s.roll_no)
